@@ -1,7 +1,7 @@
 name: Assign Copilot PR Review
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize, reopened]
 
 permissions:
@@ -19,5 +19,5 @@ jobs:
             --method POST \
             -H "Accept: application/vnd.github+json" \
             /repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/requested_reviewers \
-            -f "reviewers[]=copilot-pull-request-reviewer" \
-            || echo "⚠️ Copilot reviewer assignment failed (feature may not be enabled for this repo)"
+            -f "reviewers[]=Copilot" \
+            || echo "⚠️ Copilot reviewer assignment failed"
