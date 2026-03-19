@@ -18,6 +18,8 @@ website:
         text: "Issue #2 分析"
       - href: members-list.qmd
         text: 成员名单
+      - href: zuoye.qmd
+        text: 检查作业
 
 format:
   html:
