@@ -1,5 +1,6 @@
 ---
 title: "Issue #1 - 申请加入成员名单"
+date: today
 format:
   html:
     page-layout: full
