@@ -56,7 +56,6 @@ cat("共有", nrow(students), "名学生\n")
 
 ```{r}
 #| label: issue1-mapping
-#| cache: true
 
 # 获取 Issue #1 所有评论
 issue1_comments <- gh(
